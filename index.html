@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Catatan Keuangan</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg"></div>
+
+<section id="login" hidden>
+  <div class="logo"></div>
+  <h2>Masukkan PIN</h2>
+  <p id="lmsg" class="muted">Catatan keuanganmu terkunci</p>
+  <div id="dots"></div>
+  <div id="pad"></div>
+</section>
+
+<div id="app" hidden>
+  <header>
+    <div><small>Halo</small><b>Catatan Keuangan</b></div>
+    <div><button class="icb" data-a="sync" aria-label="Muat ulang"></button><button class="icb" data-a="logout" aria-label="Keluar"></button></div>
+  </header>
+  <main id="view"></main>
+  <button class="fab" data-a="add"></button>
+  <nav>
+    <button data-a="tab" data-v="home"></button>
+    <button data-a="tab" data-v="chart"></button>
+    <button data-a="tab" data-v="list"></button>
+  </nav>
+</div>
+
+<div id="ov" data-a="close"></div>
+<div id="sheet"></div>
+<div id="dlg" hidden></div>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
