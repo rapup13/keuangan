@@ -1,5 +1,5 @@
 /* ===== PENGATURAN: tempel URL Web App dari Apps Script di sini ===== */
-const API_URL = 'https://script.google.com/macros/s/AKfycbwTUBuA5ejNSaCoUo1NwrhkdARh440h4WR1BC-9SuNwLrEYevZk70emMsz9cYiQDm35Uw/exec';
+const API_URL = 'GANTI_DENGAN_URL_WEB_APP_ANDA';
 
 const $ = s => document.querySelector(s);
 const S = { token: localStorage.getItem('tk'), tx: JSON.parse(localStorage.getItem('tx') || '[]'), tab: 'home', period: 'month', from: '', to: '', loading: false, h: { q: '', cat: '', jenis: '', from: '', to: '' } };
